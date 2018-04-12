@@ -14,8 +14,6 @@
   <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
     crossorigin="anonymous"></script>
-  <!-- Page level plugin CSS-->
-  <link href="../vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="../css/emergencia.css" rel="stylesheet">
   <link href="../css/main.css" rel="stylesheet">
@@ -83,29 +81,45 @@
   <div class="content-wrapper">
     <div class="container justify-content-center">
       <ul class="list-inline">
-        <li class="list-inline-item">
+        <li class="list-inline-item" id="door1">
           <h6 class="text-center">Puerta de Emergencia 1</h6>
           <div class="exit-image-container">
             <img src="../assets/images/exit-closed.jpg" alt="Puertas cerradas">
           </div>
+          <p class="closed text-center">Abierto por última vez:
+            <br>
+            <span>12-01-2018</span>
+          </p>
         </li>
-        <li class="list-inline-item">
-            <h6 class="text-center">Puerta de Emergencia 2</h6>
-            <div class="exit-image-container">
-              <img src="../assets/images/exit-closed.jpg" alt="Puertas cerradas">
-            </div>
+        <li class="list-inline-item" id="door2">
+          <h6 class="text-center">Puerta de Emergencia 2</h6>
+          <div class="exit-image-container">
+            <img src="../assets/images/exit-closed.jpg" alt="Puertas cerradas">
+          </div>
+          <p class="closed text-center">Abierto por última vez:
+            <br>
+            <span>03-06-2017</span>
+          </p>
         </li>
-        <li class="list-inline-item">
-            <h6 class="text-center">Puerta de Emergencia 3</h6>
-            <div class="exit-image-container">
-              <img src="../assets/images/exit-open.jpg" alt="Puertas cerradas">
-            </div>
+        <li class="list-inline-item" id="door3">
+          <h6 class="text-center">Puerta de Emergencia 3</h6>
+          <div class="exit-image-container">
+            <img src="../assets/images/exit-open.jpg" alt="Puertas cerradas">
+          </div>
+          <p class="open text-center">Abierto desde:
+            <br>
+            <span>9:00 AM</span>
+          </p>
         </li>
-        <li class="list-inline-item">
-            <h6 class="text-center">Puerta de Emergencia 4</h6>
-            <div class="exit-image-container">
-              <img src="../assets/images/exit-closed.jpg" alt="Puertas cerradas">
-            </div>
+        <li class="list-inline-item" id="door4">
+          <h6 class="text-center">Puerta de Emergencia 4</h6>
+          <div class="exit-image-container">
+            <img src="../assets/images/exit-closed.jpg" alt="Puertas cerradas">
+          </div>
+          <p class="closed text-center">Abierto por última vez:
+            <br>
+            <span>22-08-2017</span>
+          </p>
         </li>
       </ul>
     </div>
@@ -145,17 +159,12 @@
   <!-- Bootstrap core JavaScript-->
   <script src="../vendor/jquery/jquery.min.js"></script>
   <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- Core plugin JavaScript-->
-  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
   <!-- Page level plugin JavaScript-->
   <script src="../vendor/chart.js/Chart.min.js"></script>
-  <script src="vendor/datatables/jquery.dataTables.js"></script>
-  <script src="../vendor/datatables/dataTables.bootstrap4.js"></script>
   <!-- Custom scripts for all pages-->
   <script src="../js/sb-admin.min.js"></script>
   <!-- Custom scripts for this page-->
-  <script src="../js/sb-admin-datatables.min.js"></script>
-  <script src="../js/sb-admin-charts.min.js"></script>
+  <script src="../js/emergencia-data.js"></script>
   </div>
 </body>
 
