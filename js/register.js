@@ -109,7 +109,7 @@ $(document).ready(function () {
     firebase.auth().signInWithEmailAndPassword(email, password)
       .catch(function (error) {
         // Handle Errors here.
-        alert('email y/o contraseña incorrecta');
+      
         var errorCode = error.code;
         var errorMessage = error.message;
       });
