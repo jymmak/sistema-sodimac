@@ -1,6 +1,12 @@
 .exit-image-container {
   width: 12em;
-  margin: 1.5em;
+  margin: 1.2em;
+}
+
+ul.door-list {
+  width: 90%;
+  margin: auto;
+  text-align: center;
 }
 
 img.doors {
@@ -16,4 +22,8 @@ img.doors {
 
 .open {
   color: red;
+}
+
+.list-inline-item {
+  margin-right: 0 !important;
 }
