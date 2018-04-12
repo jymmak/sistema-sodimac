@@ -7,8 +7,9 @@ var ctx = document.getElementById("myAreaChart");
 var myLineChart = new Chart(ctx, {
   type: 'line',
   data: {
-    labels: ["Mar 1", "Mar 2", "Mar 3", "Mar 4", "Mar 5", "Mar 6", "Mar 7", "Mar 8", "Mar 9", "Mar 10", "Mar 11", "Mar 12", "Mar 13"],
+    labels: ["0a.m.-1a.m.", "1a.m.-2a.m.", "3a.m.-4a.m.", "4a.m.-5a.m.", "5a.m.-6a.m.", "6a.m.-7a.m.", "7a.m.-8a.m.", "8a.m.-9a.m.", "9a.m.-10a.m.", "10a.m.-11a.m.", "11a.m.-12a.m.", "12a.m.-1p.m.", "1p.m.-2p.m."],
     datasets: [{
+      hours:[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
       label: "Sessions",
       lineTension: 0.3,
       backgroundColor: "rgba(2,117,216,0.2)",

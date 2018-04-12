@@ -10,7 +10,7 @@ body {
   margin: 0;
   background: radial-gradient(ellipse farthest-corner at center bottom, white, white);
   color: #01010c;
-  font-size: 18px;
+
   font-family: "Roboto", sans-serif;
   margin-top: 12%;
 }
