@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sodimac</title>
+  <link href="https://fonts.googleapis.com/css?family=Days+One|Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="../css/register.css">
+  <link rel="icon" href="../assets/images/logo1.png">
+
+</head>
+
+<body>
+
+  <main class="container-fluid">
+    <div class="row">
+      <div class="border-register col s12 m4">
+        <div class="box-img-register">
+          <img class="img-logo-white logo" src="../assets/images/logo1.png" alt="logo">
+        </div>
+        <div class="box-btn">
+          <a class="waves-effect modal-trigger btn" href="#modal2">Iniciar Sesión</a>
+          <a class="waves-effect modal-trigger btn" href="#modal1">Registrarse</a>
+        </div>
+        <div class="error"></div>
+      </div>
+    </div> 
+  </main>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal center">
+    <div class="modal-header right-align">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green">X</a>
+    </div>
+    <div class="modal-content">
+      <h3>Sign up</h3>
+      <div class="input-field col s6">
+        <i class="material-icons prefix">account_circle</i>
+        <input type="text" class="validate name-register">
+        <label for="icon_prefix">First Name</label>
+      </div>
+      <div class="input-field col s6">
+        <i class="material-icons prefix">email</i>
+        <input type="text" class="validate email-register">
+        <label for="icon_prefix">Email</label>
+      </div>
+      <div class="input-field col s6">
+        <i class="material-icons prefix">lock</i>
+        <input type="password" class="validate password-register">
+        <label for="icon_prefix">Password</label>
+      </div>
+    </div>
+    <div class="modal-footer" id="alg-center">
+      <button class="modal-action modal-close waves-effect waves-green btn-style btn btn-register" disabled>Next</button>
+    </div>
+  </div>
+  <!-- Modal Structure -->
+  <div id="modal2" class="modal center">
+    <div class="modal-header right-align">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green">X</a>
+    </div>
+    <div class="modal-content">
+      <h4>Login</h4>
+      <div class="input-field">
+        <i class="material-icons prefix">account_circle</i>
+        <input id="email2" class="email-login" type="email" placeholder="Ingresa email">
+      </div>
+      <div class="input-field">
+        <i class="material-icons prefix">lock</i>
+        <input class="password-login" id="contraseña2" type="password" placeholder="Ingresa contraseña">
+      </div>
+
+      <div class="modal-footer" id="alg-center">
+        <button onclick="" class="modal-action modal-close waves-effect waves-green btn btn-style btn-login " disabled>Next</button>
+      </div>
+    </div>
+  </div>
+  <div id="contenido">
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="../js/register.js"></script>
+</body>
+
+</html>
