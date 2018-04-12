@@ -476,3 +476,9 @@ footer.sticky-footer {
     width: calc(100% - 55px);
   }
 }
+/* Electricidad */
+.width{
+  width: 20%;
+ /*  height: 65%;
+  margin: 50px; */
+}
