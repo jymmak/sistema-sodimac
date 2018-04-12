@@ -449,9 +449,7 @@ body.sidenav-toggled .navbar-sidenav-tooltip.show {
   .electr{
     height:90vh !important;
   }
-  .sistem{
-    margin-top: 6%  !important ;
-  }
+
 }
 
 @media (min-width: 1200px) {
