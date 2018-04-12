@@ -85,7 +85,7 @@ $(document).ready(function () {
         var errorCode = error.code;
         var errorMessage = error.message;
       });
-  
+
     firebase.auth().onAuthStateChanged(function (user) {
       var userNew = nameRegisterNew.val();
       if (user) {
@@ -98,7 +98,7 @@ $(document).ready(function () {
         }).then(user => {
           console.log('Usuario Registrado');
         });
-      } 
+      }
     });
   });
   // Autentificación por email y password
@@ -109,7 +109,7 @@ $(document).ready(function () {
     firebase.auth().signInWithEmailAndPassword(email, password)
       .catch(function (error) {
         // Handle Errors here.
-      
+
         var errorCode = error.code;
         var errorMessage = error.message;
       });
