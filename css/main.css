@@ -23,7 +23,12 @@ body.fixed-nav {
   min-height: calc(100vh - 56px);
   padding-top: 1rem;
 }
-
+.logo{
+  width: 15vw;
+}
+.navbar{
+  background-color: #1b2127 !important;
+}
 .scroll-to-top {
   position: fixed;
   right: 15px;
@@ -67,7 +72,7 @@ body.fixed-nav {
 
 #mainNav .navbar-collapse {
   overflow: auto;
-  max-height: 75vh;
+  max-height: 65vh;
 }
 
 #mainNav .navbar-collapse .navbar-nav .nav-item .nav-link {
@@ -226,7 +231,7 @@ body.fixed-nav {
 }
 
 #mainNav.fixed-top.navbar-dark .sidenav-toggler {
-  background-color: #212529;
+  background-color: #697480;
 }
 
 #mainNav.fixed-top.navbar-dark .sidenav-toggler a i {
@@ -460,9 +465,9 @@ footer.sticky-footer {
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 56px;
+  height: 50px;
   background-color: #e9ecef;
-  line-height: 55px;
+  line-height: 50px;
 }
 
 @media (min-width: 992px) {
