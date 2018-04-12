@@ -15,34 +15,25 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
     crossorigin="anonymous"></script>
   <!-- Page level plugin CSS-->
-  <link href=" ../vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <link href="../vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="../css/main.css" rel="stylesheet">
-  <link href="../css/sistem.css" rel="stylesheet">
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand" href="sist.c.in.html">
-      <img class="ui centered medium image logo" src="../assets/images/logo-sodic.svg" alt="logo">
-    </a>
+    <a class="navbar-brand" href="sist.c.in.html"><img class="ui centered medium image logo" src="../assets/images/logo-sodic.svg" alt="logo"></a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
       aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-          <a class="nav-link" href="sist.c.in.html">
-            <i class="fas fa-fire"></i>
-            <span class="nav-link-text">Sistema Contra Incendio</span>
-          </a>
-        </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
           <a class="nav-link" href="bombas.html">
             <i class="fas fa-tint"></i>
-            <span class="nav-link-text">Sistema de Bombas</span>
+            <span class="nav-link-text">Sistema de Bombas y Contra Incendios</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
@@ -81,65 +72,47 @@
       </ul>
     </div>
   </nav>
-
-
-  <div class="container-fluid">
-    <div class=" sistem">
-      <div class="app">
-        <time class="time"></time>
-
-        <ul class="widget">
-          <li class="color-1">
-            <h2>Temperature</h2>
-            <div class="val">23
-              <small>
-                <sup>°</sup>c</small>
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <!-- Area Chart Example-->
+      <div class="card mb-3">
+        <div class="card-header">
+          <i class="fas fa-bolt"></i> Sistema de Bombas y Contraincendios</div>
+        <div class="card-body ">
+          <div class="row">
+            <div class="col-md-4">
+              <div id="tem">
+              </div>
             </div>
-          </li>
-          <li class="color-2">
-            <h2>Tipo de Humo</h2>
-
-          </li>
-
-          <li class="color-3">
-            <h2>Alarm</h2>
-            <div class="val">ON</div>
-          </li>
-          </nav>
-      </div>
-
-
-    </div>
-
-    <footer class="sticky-footer">
-      <div class="container">
-        <div class="text-center">
-          <small>Copyright © Your Website 2018</small>
-        </div>
-      </div>
-    </footer>
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-      <i class="fa fa-angle-up"></i>
-    </a>
-    <!-- Logout Modal-->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-          <div class="modal-footer">
-            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="index.html">Logout</a>
+            <div class="col-md-4">
+              <div id="pres">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div id="humo">
+              </div>
+            </div>
           </div>
         </div>
+        <div class="card-footer small text-muted">
+          <script type="text/javascript">
+            var d = new Date(); document.write("<div>" + d.getDate() + "/" + (d.getMonth() + 1) + "/" + d.getFullYear(), ', ' + d.getHours(), ':' + d.getMinutes(), ':' + d.getSeconds()); +"</div>"
+          </script>
+
+        </div>
       </div>
+
+      <!-- /.content-wrapper-->
+      <footer class="sticky-footer">
+        <div class="container">
+          <div class="text-center">
+            <small>Copyright © Laboratoria 2018</small>
+          </div>
+        </div>
+      </footer>
+
     </div>
+  </div>
   </div>
   <!-- Bootstrap core JavaScript-->
   <script src="../vendor/jquery/jquery.min.js"></script>
@@ -147,12 +120,16 @@
   <!-- Core plugin JavaScript-->
   <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
   <!-- Page level plugin JavaScript-->
+  <script src="../vendor/chart.js/Chart.min.js"></script>
+  <script src="../vendor/datatables/jquery.dataTables.js"></script>
+  <script src="../vendor/datatables/dataTables.bootstrap4.js"></script>
   <!-- Custom scripts for all pages-->
   <script src="../js/sb-admin.min.js"></script>
   <!-- Custom scripts for this page-->
   <script src="../js/sb-admin-datatables.min.js"></script>
   <script src="../js/sb-admin-charts.min.js"></script>
   <script src="../js/sistem.js"></script>
+  <script src="../js/bombasIncendios.js"></script>
 
 </body>
 
