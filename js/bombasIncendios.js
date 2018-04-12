@@ -1,7 +1,7 @@
 
 
 var imagenes = [
-  { t: "55", title:"temperatura",img: "termometro1.png", text: "Temperatura Elevada", img2:"medir.png", presion:"9", text2:"Baja Presión y Sistema de Bomba Activado", img3:"humoSi.png", humo:"Humo Detectado", text3:"Alarma de incendio encendido"},
+  { t: "58", title:"temperatura",img: "termometro1.png", text: "Temperatura Elevada", img2:"medir.png", presion:"9", text2:"Baja Presión y Sistema de Bomba Activado", img3:"humoSi.png", humo:"Humo Detectado", text3:"Alarma de incendio encendido"},
   { t: "14.7", title:"temperatura",img: "termometro.png", text: "Temperatura Promedio - No hay incendio", img2:"medir.png", presion:"15", text2:"Presión Normal y Sistema de Bomba Desactivado", img3:"humoNo.png", humo:"Humo NO Detectado", text3:"Alarma de incendio Apagado"},
   ];
   window.addEventListener("load", function load(){
