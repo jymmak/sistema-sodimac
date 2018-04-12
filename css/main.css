@@ -26,8 +26,9 @@ body.fixed-nav {
 .logo{
   width: 15vw;
 }
-.navbar{
+.navbar, footer{
   background-color: #1b2127 !important;
+  color:white !important;
 }
 .scroll-to-top {
   position: fixed;
@@ -171,6 +172,7 @@ body.fixed-nav {
   }
   #mainNav .navbar-collapse .navbar-sidenav > .nav-item > .nav-link {
     padding: 1em;
+    margin-top:6%;
   }
   #mainNav .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level,
   #mainNav .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level {
@@ -443,6 +445,12 @@ body.sidenav-toggled .navbar-sidenav-tooltip.show {
 @media (min-width: 768px) {
   .card-columns {
     column-count: 2;
+  }
+  .electr{
+    height:90vh !important;
+  }
+  .sistem{
+    margin-top: 6%  !important ;
   }
 }
 

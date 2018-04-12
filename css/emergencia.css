@@ -1,0 +1,19 @@
+.exit-image-container {
+  width: 12em;
+  margin: 1.5em;
+}
+
+img {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 50px;
+}
+
+.closed {
+  color: gray;
+}
+
+.open {
+  color: red;
+}

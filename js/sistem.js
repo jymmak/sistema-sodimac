@@ -25,3 +25,13 @@ document.getElementsByClassName('reload')[0].onclick = function() {
     body.classList.add('active');
   }, 1500);
 }
+
+
+var tem = 18;
+if (edad >= 18) {
+   alert("Eres mayor de edad");
+}
+else {
+   alert("Eres menor de edad");
+}
+
